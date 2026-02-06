@@ -1,0 +1,33 @@
+    // Test signals to be automatically available in the 'REXSIM' buffer
+    // Between positions 189 - 215 
+    // Appear in data output as RTS_SIM189 - RTS_SIM215
+189     pProjData->dTest[0] = LAT_POS_ic;                           // [deg] reference point, lat. pos
+190     pProjData->dTest[1] = LON_POS_ic;                           // [deg] reference point, long. pos
+191     pProjData->dTest[2] = LAT_POS_TABLE_LOC;                    // [rad] wind table, start coordinate, lat. pos 
+192     pProjData->dTest[3] = LON_POS_TABLE_LOC;                    // [rad] wind table, start coordinate, long. pos
+193     pProjData->dTest[4] = Z_POS_TABLE_LOC;                      // [m] wind table, start coordinate, z-pos 
+194     pProjData->dTest[5] = WIND_TABLE_LEN[0];                    // [m] wind table, size, x
+195     pProjData->dTest[6] = WIND_TABLE_LEN[1];                    // [m] wind table, size, y
+196     pProjData->dTest[7] = WIND_TABLE_LEN[2];                    // [m] wind table, size, z
+197     pProjData->dTest[8] = X_E_VEC[0];                           // [m] reference point position in earth fixed coordinates in x
+198     pProjData->dTest[9] = X_E_VEC[1];                           // [m] reference point position in earth fixed coordinates in y
+199     pProjData->dTest[10] = X_E_VEC[2];                          // [m] reference point position in earth fixed coordinates in z
+200     pProjData->dTest[11] = LAT_POS;                             // [rad] reference point latitudinal position
+201     pProjData->dTest[12] = LON_POS;                             // [rad] reference point longitudinal position
+202     pProjData->dTest[13] = H_BAR;                               // [m] barometric height
+203     pProjData->dTest[14] = BDE_WIND_ONOFF;                      // [-] flag wind table
+204     pProjData->dTest[15] = V_E_WIND_VEC[0];                     // [m/s] wind vel., NED, u
+205     pProjData->dTest[16] = V_E_WIND_VEC[1];                     // [m/s] wind vel., NED, v
+206     pProjData->dTest[17] = V_E_WIND_VEC[2];                     // [m/s] wind vel., NED, w
+207     pProjData->dTest[18] = X_E_HUB_LOOKUP_VEC[0];               // [m] position rotor hub, NED, north
+208     pProjData->dTest[19] = X_E_HUB_LOOKUP_VEC[1];               // [m] position rotor hub, NED, east
+209     pProjData->dTest[20] = X_E_HUB_LOOKUP_VEC[2];               // [m] position rotor hub, NED, down
+210     pProjData->dTest[21] = V_E_HUB_WIND_LOOKUP_VEC[0];          // [m/s] wind vel. from wind table at rotor hub, NED, u
+211     pProjData->dTest[22] = V_E_HUB_WIND_LOOKUP_VEC[1];          // [m/s] wind vel. from wind table at rotor hub, NED, v
+212     pProjData->dTest[23] = V_E_HUB_WIND_LOOKUP_VEC[2];          // [m/s] wind vel. from wind table at rotor hub, NED, w
+213     pProjData->dTest[24] = V_B_HUB_WIND_LOOKUP_VEC[0];          // [m/s] wind vel. from wind table at rotor hub, body fixed frame, u        (Falsche Zuordnung in HeliWorX?)
+214     pProjData->dTest[25] = V_B_HUB_WIND_LOOKUP_VEC[1];          // [m/s] wind vel. from wind table at rotor hub, body fixed frame, v        (Falsche Zuordnung in HeliWorX?)
+215     pProjData->dTest[26] = V_B_HUB_WIND_LOOKUP_VEC[2];          // [m/s] wind vel. from wind table at rotor hub, body fixed frame, w        (Falsche Zuordnung in HeliWorX?)
+
+
+005                                                                 // [s] simulation time
